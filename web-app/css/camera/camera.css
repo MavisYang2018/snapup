@@ -1,0 +1,81 @@
+* { 
+   font-family: 'Comfortaa', cursive;
+}  
+/* full screen */
+html,body {
+    margin: 0;
+    padding: 0;
+}
+.camera-layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.camera-layout > .camera-content {
+    height: inherit;
+}
+.mobile-col-camera-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+.mobile-col-camera-canvas {
+    position: absolute;
+    top: 52vh;
+    left: 55vw;
+    z-index: 1;
+    width: 35%;
+    border-radius: 5px;
+} 
+.btn-box {
+    position: fixed;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 270px;
+    white-space: nowrap;
+}
+/* button */
+.mobile-col-camera-btn-snap, 
+.mobile-col-camera-btn-upload {
+    width: 140px;
+    height: 50px;
+    position: relative;
+    margin-left: 1vw;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.mobile-col-camera-btn-snap {
+    background-color: #5066C8;
+    color: aliceblue;
+    transition-duration: 1s;
+}
+.mobile-col-camera-btn-snap:active {
+    box-shadow: 0px 0px 20px #5066C8;
+    background-color: rgb(112, 130, 248);
+}
+
+.mobile-col-camera-btn-upload {
+    background-color: #D2D9F9;
+    color: #5066C8;
+}
+/* let user don't select the text */
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }

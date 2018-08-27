@@ -1,0 +1,13 @@
+# listen on?
+port: ":443"
+# web-app folder path 
+staticPath: "/web-app/"
+# server side image upload and store folder
+uploadPath: "/server/upload/"
+# tls cert and key
+tls:
+  # certifiaction file path
+  cert: "ssl/server.crt"
+  # key file path
+  key: "ssl/server.key"
+
