@@ -3,7 +3,25 @@ html,body {
     margin: 0;
     padding: 0;
 }
-
+.camera-layout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.camera-layout > .camera-content {
+    height: inherit;
+}
+.mobile-col-camera-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
 .mobile-col-camera-canvas {
     position: absolute;
     top: 52vh;
@@ -13,29 +31,11 @@ html,body {
     border-radius: 5px;
 } 
 
-.camera-layout {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.camera-content {
-    height: inherit;
-}
-
-video {
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: fixed;
-}
-
 /* button */
-[class*="mobile-col-camera-btn"] {
+.mobile-col-camera-btn-snap, 
+.mobile-col-camera-btn-upload {
+    position: absolute;
+    top: 80vh;
     padding: 16px;
     padding-left: 26px;
     padding-right: 26px;
@@ -46,19 +46,12 @@ video {
     letter-spacing: 1px;
     font-size: 14px;
 }
-
-.mobile-col-camera-btn-snap, .mobile-col-camera-btn-upload {
-    position: absolute;
-    top: 80vh;
-}
-
 .mobile-col-camera-btn-snap {
     left: 31%;
     transform: translateX(-50%);
     background-color: #435CFA;
     color: aliceblue;
     transition-duration: 1s;
-    
 }
 .mobile-col-camera-btn-snap:active {
     box-shadow: 0px 0px 20px #435CFA;
@@ -71,7 +64,6 @@ video {
     background-color: #C4CBFA;
     color: #435CFA;
 }
-
 /* let user don't select the text */
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
