@@ -33,40 +33,41 @@ html,body {
     width: 35%;
     border-radius: 5px;
 } 
-
+.btn-box {
+    position: fixed;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 270px;
+    white-space: nowrap;
+}
 /* button */
 .mobile-col-camera-btn-snap, 
 .mobile-col-camera-btn-upload {
-    position: absolute;
-    top: 80vh;
-    padding: 16px;
-    padding-left: 26px;
-    padding-right: 26px;
-    border-radius: 50px;
+    width: 140px;
+    height: 50px;
+    position: relative;
+    margin-left: 1vw;
     border: none;
-    text-align: center;
     outline: none;
+    border-radius: 50px;
     letter-spacing: 1px;
-    font-size: 14px;
-    font-weight: 800;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
 .mobile-col-camera-btn-snap {
-    left: 31%;
-    transform: translateX(-50%);
-    background-color: #435CFA;
+    background-color: #5066C8;
     color: aliceblue;
     transition-duration: 1s;
 }
 .mobile-col-camera-btn-snap:active {
-    box-shadow: 0px 0px 20px #435CFA;
+    box-shadow: 0px 0px 20px #5066C8;
     background-color: rgb(112, 130, 248);
 }
 
 .mobile-col-camera-btn-upload {
-    left: 74%;
-    transform: translateX(-50%);
-    background-color: #C4CBFA;
-    color: #435CFA;
+    background-color: #D2D9F9;
+    color: #5066C8;
 }
 /* let user don't select the text */
 .noselect {
