@@ -1,3 +1,6 @@
+* { 
+   font-family: 'Comfortaa', cursive;
+}  
 /* full screen */
 html,body {
     margin: 0;
@@ -45,6 +48,7 @@ html,body {
     outline: none;
     letter-spacing: 1px;
     font-size: 14px;
+    font-weight: 800;
 }
 .mobile-col-camera-btn-snap {
     left: 31%;
